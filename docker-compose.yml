@@ -1,0 +1,12 @@
+version: '3'
+services:
+    web:
+        # volumes:
+        #     - .:/app
+        build: .
+        env_file: .env
+        ports:
+            - 5000:5000
+            - 8080:8080
+        stdin_open: true
+        tty: true
